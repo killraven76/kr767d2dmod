@@ -374,9 +374,21 @@
 			<multiply skill_level="70,100" value="1.23,1.28" />
 		</effect>
 	</action_skill>
-		
-		
-		
+	<perk name="Robin Hood" icon="archery" description_key="He's a merry man with a Patriot Arrow. Do more damage with bows and crossbows with each rank." title_key="Robin Hood" max_level="5" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="weapons">
+	<requirement perk_level="1" required_skill_name="Archery" required_skill_level="1"/>
+	<requirement perk_level="2" required_skill_name="Archery" required_skill_level="20"/>
+	<requirement perk_level="3" required_skill_name="Archery" required_skill_level="40"/>
+	<requirement perk_level="4" required_skill_name="Archery" required_skill_level="60"/>
+	<requirement perk_level="5" required_skill_name="Archery" required_skill_level="80"/>
+	<effect name="EntityDamage">
+		<multiply perk_level="0" value="1"/>
+		<multiply skill_level="1" value="1.1125"/>
+		<multiply skill_level="2" value="1.225"/>
+		<multiply skill_level="3" value="1.3375"/>
+		<multiply skill_level="4" value="1.45"/>
+		<multiply skill_level="5" value="1.5625"/>
+	</effect>
+	</perk>	
 	<player_skill name="Medicine" icon="medical" description_key="medicineDesc" title_key="medicine" group="health">
 		<effect name="HealthGain">
 			<multiply skill_level="1,10" value="1.00,1.32"/>

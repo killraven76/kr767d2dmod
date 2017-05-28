@@ -1059,6 +1059,120 @@
 		<recipe name="forgedSteel" unlock_level="50"/>
 		<recipe name="minibikeChassis" unlock_level="50"/>
 	</crafting_skill>
+	<crafting_skill name="Carpentry" exp_to_level="130" icon="mining" description_key="Because you're good at dealing with morning wood." title_key="cartpentry" group="crafting">
+		<effect name="CraftingTime">
+			<multiply skill_level="1,5" value="1,.931" />
+			<multiply skill_level="5,11" value=".931,.871" />
+			<multiply skill_level="11,19" value=".871,.813" />
+			<multiply skill_level="19,32" value=".813,.741" />
+			<multiply skill_level="32,49" value=".741,.667" />
+			<multiply skill_level="49,70" value=".667,.591" />
+			<multiply skill_level="70,100" value=".591,.5" />
+		</effect>
+		<effect name="CraftingQuality">
+			<setvalue skill_level="1,5" value="1,69" />
+			<setvalue skill_level="5,11" value="69,129" />
+			<setvalue skill_level="11,19" value="129,187" />
+			<setvalue skill_level="19,32" value="187,259" />
+			<setvalue skill_level="32,49" value="259,334" />
+			<setvalue skill_level="49,70" value="334,409" />
+			<setvalue skill_level="70,100" value="409,500" />
+		</effect>
+		<effect name="RepairTime">
+			<multiply skill_level="1,10" value="1.00,0.70"/>
+			<multiply skill_level="10,20" value="0.70,0.61"/>
+			<multiply skill_level="20,30" value="0.61,0.54"/>
+			<multiply skill_level="30,40" value="0.54,0.48"/>
+			<multiply skill_level="40,50" value="0.48,0.43"/>
+			<multiply skill_level="50,60" value="0.43,0.39"/>
+			<multiply skill_level="60,70" value="0.39,0.35"/>
+			<multiply skill_level="70,80" value="0.35,0.31"/>
+			<multiply skill_level="80,90" value="0.31,0.28"/>
+			<multiply skill_level="90,100" value="0.28,0.25"/>
+		</effect>
+		<effect name="RepairAmount">
+			<add skill_level="1,10" value="1,21"/>
+			<add skill_level="10,20" value="21,27"/>
+			<add skill_level="20,30" value="27,31"/>
+			<add skill_level="30,40" value="31,35"/>
+			<add skill_level="40,50" value="35,38"/>
+			<add skill_level="50,60" value="38,41"/>
+			<add skill_level="60,70" value="41,43"/>
+			<add skill_level="70,80" value="43,46"/>
+			<add skill_level="80,90" value="46,48"/>
+			<add skill_level="90,100" value="48,50"/>
+		</effect>
+		<effect name="RepairQualityLoss">
+			<multiply skill_level="1,5" value="1.67,1.464" />
+			<multiply skill_level="5,11" value="1.464,1.283" />
+			<multiply skill_level="11,19" value="1.283,1.109" />
+			<multiply skill_level="19,32" value="1.109,.892" />
+			<multiply skill_level="32,49" value=".892,.668" />
+			<multiply skill_level="49,70" value=".668,.44" />
+			<multiply skill_level="70,100" value=".44,.167" />
+		</effect>
+		<recipe name="railingOldWoodSheet" unlock_level="1"/>
+		<recipe name="woodRailing" unlock_level="1"/>
+		<recipe name="woodFenceSheet" unlock_level="1"/>
+		<recipe name="woodPillar100" unlock_level="1"/>
+		<recipe name="whitePicketFenceSheet" unlock_level="1"/>
+		<recipe name="woodFenceFarmSheet" unlock_level="1"/>
+		<recipe name="logCabinBlock" unlock_level="1"/>
+		<recipe name="woodLogPillar100" unlock_level="1"/>
+		<recipe name="woodPole" unlock_level="5"/>
+		<recipe name="ladderWood" unlock_level="5"/>
+		<recipe name="woodFrameBlock" unlock_level="10"/>
+		<recipe name="woodFrameCNRFull" unlock_level="10"/>
+		<recipe name="woodFrameCNRInside" unlock_level="10"/>
+		<recipe name="woodFrameRamp" unlock_level="10"/>
+		<recipe name="woodFrameWedge" unlock_level="10"/>
+		<recipe name="woodShinglesBlock" unlock_level="10"/>
+		<recipe name="woodShinglesCNRFull" unlock_level="10"/>
+		<recipe name="woodShinglesGable" unlock_level="10"/>
+		<recipe name="woodShinglesPyramid" unlock_level="10"/>
+		<recipe name="woodShinglesRamp" unlock_level="10"/>
+		<recipe name="woodStairs25" unlock_level="10"/>
+		<recipe name="woodSupport" unlock_level="10"/>
+		<recipe name="woodStairsBoard" unlock_level="10"/>
+		<recipe name="woodStairsBoardRailing" unlock_level="10"/>
+		<recipe name="cntStorageChest" unlock_level="15"/>
+		<recipe name="cntSecureStorageChest" unlock_level="15"/>
+		<recipe name="secureDoorWooden" unlock_level="15"/>
+		<recipe name="barnWoodBlock" unlock_level="20"/>
+		<recipe name="woodWedgeTip" unlock_level="20"/>
+		<recipe name="woodHalf" unlock_level="20"/>
+		<recipe name="woodHatch1_v1" unlock_level="25"/>
+		<recipe name="woodArrowSlitHalf" unlock_level="25"/>
+		
+<!---	Placeholder for tool shafts
+		<recipe name="longWoodShaft" unlock_level="25"/>
+		<recipe name="hortWoodShaft" unlock_level="25"/>
+-->
+		<recipe name="woodCatwalk" unlock_level="30"/>
+		<recipe name="woodCatwalkRailing" unlock_level="30"/>
+		<recipe name="woodCatwalkRailingCNR" unlock_level="30"/>
+		<recipe name="woodCatwalkWedgeRailing" unlock_level="30"/>
+		<recipe name="cntStorageAmmo" unlock_level="35"/>
+		<recipe name="cntStorageBuilding" unlock_level="35"/>
+		<recipe name="cntStorageExplosives" unlock_level="35"/>
+		<recipe name="cntStorageFood" unlock_level="35"/>
+		<recipe name="cntStorageHealth" unlock_level="35"/>
+		<recipe name="cntStorageWeapons" unlock_level="35"/>
+		<recipe name="redWoodBlock" unlock_level="40"/>
+		<recipe name="redWoodPillar100" unlock_level="40"/>
+		<recipe name="redWoodStairs25" unlock_level="40"/>
+		<recipe name="cobblestoneFrameBlock" unlock_level="45"/>
+		<recipe name="cobblestoneFrameRamp" unlock_level="45"/>
+		<recipe name="cobblestoneFrameWedge" unlock_level="45"/>
+		<recipe name="cobblestoneFrameWedgeTip" unlock_level="45"/>
+		<recipe name="cobblestoneFramePlate" unlock_level="45"/>
+		<recipe name="cobblestoneFrameCNRFull" unlock_level="45"/>
+		<recipe name="cobblestoneFrameCNRInside" unlock_level="45"/>
+		<recipe name="cobblestoneFramePillar100" unlock_level="45"/>
+		<recipe name="cobblestoneFramePillar50" unlock_level="45"/>
+		<recipe name="cobblestoneFramePole" unlock_level="45"/>
+		<recipe name="cobblestoneFrameStairs25" unlock_level="45"/>
+	</crafting_skill>
 	<perk name="The Survivor" icon="run" description_key="theSurvivorDesc" title_key="theSurvivor" max_level="5" skill_point_cost_multiplier="0" passive_effect="true" skill_point_cost_per_level="10" group="health">
 		<requirement perk_level="1" required_player_level="1" />
 		<requirement perk_level="2" required_player_level="10" />

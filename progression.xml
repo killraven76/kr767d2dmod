@@ -709,6 +709,26 @@
 			<multiply skill_level="49,70" value=".668,.44" />
 			<multiply skill_level="70,100" value=".44,.167" />
 		</effect>
+				<recipe name="plantFiberShoes" unlock_level="1"/>
+		<recipe name="plantFiberGloves" unlock_level="5"/>
+		<recipe name="plantFiberHat" unlock_level="10"/>
+		<recipe name="plantFiberHood" unlock_level="10"/>
+		<recipe name="plantFiberPants" unlock_level="15"/>
+		<recipe name="plantFiberShirt" unlock_level="20"/>
+		<recipe name="cloth" unlock_level="20"/>
+		<recipe name="clothBoots" unlock_level="25"/>
+		<recipe name="clothGloves" unlock_level="30"/>
+		<recipe name="clothHat" unlock_level="35"/>
+		<recipe name="clothPants" unlock_level="40"/>
+		<recipe name="clothJacket" unlock_level="45"/>
+<!---	Prep for future addition of padded armor
+		<recipe name="clothPadded" unlock_level=45"/>
+		<recipe name="clothPaddedBoots" unlock_level="50"/>
+		<recipe name="clothPaddedGloves" unlock_level="55"/>
+		<recipe name="clothPaddedHat" unlock_level="60"/>
+		<recipe name="clothPaddedPants	" unlock_level="65"/>
+		<recipe name="clothPaddedJacket" unlock_level="70"/>
+-->
 	</crafting_skill>
 	<crafting_skill name="Leatherworking" icon="armor_leather" description_key="leatherworkingDesc" title_key="leatherworking" group="clothing">
 		<effect name="CraftingTime">

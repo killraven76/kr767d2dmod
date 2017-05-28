@@ -782,6 +782,26 @@
 			<multiply skill_level="49,70" value=".668,.44" />
 			<multiply skill_level="70,100" value=".44,.167" />
 		</effect>
+		<recipe name="animalHideBoots" unlock_level="1"/>
+		<recipe name="animalHideGloves" unlock_level="5"/>
+		<recipe name="animalHideHood" unlock_level="10"/>
+		<recipe name="animalHideLegArmor" unlock_level="15"/>
+		<recipe name="animalHideChestArmor" unlock_level="20"/>
+		<recipe name="animalHidePoncho" unlock_level="20"/>
+		<recipe name="leather" unlock_level="20"/>
+		<recipe name="leatherBoots" unlock_level="25"/>
+		<recipe name="leatherGloves" unlock_level="30"/>
+		<recipe name="leatherHood" unlock_level="35"/>
+		<recipe name="leatherJacket" unlock_level="40"/>
+		<recipe name="leatherPants" unlock_level="45"/>
+<!---	Prep for future addition of studded armor
+		<recipe name="leatherStudded" unlock_level=45"/>
+		<recipe name="leatherStuddedBoots" unlock_level="50"/>
+		<recipe name="leatherStuddedGloves" unlock_level="55"/>
+		<recipe name="leatherStuddedHood" unlock_level="60"/>
+		<recipe name="leatherStuddedPants	" unlock_level="65"/>
+		<recipe name="leatherStuddedJacket" unlock_level="70"/>
+-->
 	</crafting_skill>
 	<perk name="Leather Tanning" icon="armor_leather" description_key="leatherTanningPerkDesc" title_key="leatherTanningPerk" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="clothing">
 		<requirement skill_level="1" required_skill_name="Leatherworking" required_skill_level="1"/>

@@ -932,6 +932,30 @@
 			<multiply skill_level="70,100" value=".44,.167" />
 		</effect>
 	</crafting_skill>
+	<crafting_skill name="Cooking" exp_to_level="130" icon="knife" description_key="The higher your skill in cooking the faster you can craft meals." title_key="Cooking" group="crafting">
+		<effect name="CraftingTime">
+			<multiply skill_level="1,5" value="1,.931" />
+			<multiply skill_level="5,11" value=".931,.871" />
+			<multiply skill_level="11,19" value=".871,.813" />
+			<multiply skill_level="19,32" value=".813,.741" />
+			<multiply skill_level="32,49" value=".741,.667" />
+			<multiply skill_level="49,70" value=".667,.591" />
+			<multiply skill_level="70,100" value=".591,.5" />
+		</effect>
+		<recipe name="cornBread" unlock_level="5"/>
+		<recipe name="vegetableStew" unlock_level="7"/>
+		<recipe name="bottledWater" unlock_level="7"/>
+		<recipe name="charredMeat" unlock_level="10"/>
+		<recipe name="foodYuccaJuice" unlock_level="10"/>
+		<recipe name="grilledMeat" unlock_level="15"/>
+		<recipe name="goldenRodTea" unlock_level="10"/>
+		<recipe name="redTea" unlock_level="10"/>
+		<recipe name="boiledMeat" unlock_level="20"/>
+		<recipe name="coffee" unlock_level="10"/>
+		<recipe name="blueberryPie" unlock_level="25"/>
+		<recipe name="baconAndEggs" unlock_level="30"/>
+		<recipe name="meatStew" unlock_level="35"/>
+	</crafting_skill>
 	<perk name="The Survivor" icon="run" description_key="theSurvivorDesc" title_key="theSurvivor" max_level="5" skill_point_cost_multiplier="0" passive_effect="true" skill_point_cost_per_level="10" group="health">
 		<requirement perk_level="1" required_player_level="1" />
 		<requirement perk_level="2" required_player_level="10" />

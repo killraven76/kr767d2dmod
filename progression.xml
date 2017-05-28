@@ -861,6 +861,23 @@
 			<multiply skill_level="49,70" value=".668,.44" />
 			<multiply skill_level="70,100" value=".44,.167" />
 		</effect>
+		<recipe name="scrapBoots" unlock_level="1"/>
+		<recipe name="scrapGloves" unlock_level="5"/>
+		<recipe name="scrapHelmet" unlock_level="10"/>
+		<recipe name="scrapLegArmor" unlock_level="15"/>
+		<recipe name="scrapChestArmor" unlock_level="20"/>
+		<recipe name="ironBoots" unlock_level="25"/>
+		<recipe name="ironGloves" unlock_level="30"/>
+		<recipe name="ironHelmet" unlock_level="35"/>
+		<recipe name="ironLegArmor" unlock_level="40"/>
+		<recipe name="ironChestArmor" unlock_level="45"/>
+<!---		Future Recipes to be added later
+		<recipe name="steelBoots" unlock_level="50"/>
+		<recipe name="steelGloves" unlock_level="55"/>
+		<recipe name="steelHelmet" unlock_level="60"/>
+		<recipe name="steelLegArmor" unlock_level="65"/>
+		<recipe name="steelChestArmor" unlock_level="70"/>
+-->
 	</crafting_skill>
 	<crafting_skill name="Miscellaneous Crafting" exp_to_level="300" icon="misc_crafting" description_key="miscCraftingDesc" title_key="miscCrafting" group="crafting">
 		<effect name="CraftingTime">

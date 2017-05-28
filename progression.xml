@@ -803,11 +803,12 @@
 		<recipe name="leatherStuddedJacket" unlock_level="70"/>
 -->
 	</crafting_skill>
+<!---	Removed with Leatherworking recipe gating
 	<perk name="Leather Tanning" icon="armor_leather" description_key="leatherTanningPerkDesc" title_key="leatherTanningPerk" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="clothing">
 		<requirement skill_level="1" required_skill_name="Leatherworking" required_skill_level="1"/>
 		<recipe name="leather" unlock_level="1"/>
 	</perk>
-
+-->
 	<crafting_skill name="Armor Smithing" icon="forge" description_key="armorerDesc" title_key="armorer" group="clothing">
 		<effect name="CraftingTime">
 			<multiply skill_level="1,5" value="1,.931" />

@@ -5,7 +5,7 @@
 	max_level="200" 
 	exp_to_level="8000" 
 	experience_multiplier="1.0142" 
-	skill_points_per_level="5" 
+	skill_points_per_level="6" 
 	skill_point_multiplier="0"/>
 	<!-- that's 8000 XP for level 1 and 134k for level 199, total cumulative of 9MXP aka 2x of A15.0 -->
 
@@ -375,20 +375,20 @@
 		</effect>
 	</action_skill>
 	<perk name="Robin Hood" icon="archery" description_key="He's a merry man with a Patriot Arrow. Do more damage with bows and crossbows with each rank." title_key="Robin Hood" max_level="5" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="weapons">
-	<requirement perk_level="1" required_skill_name="Archery" required_skill_level="1"/>
-	<requirement perk_level="2" required_skill_name="Archery" required_skill_level="20"/>
-	<requirement perk_level="3" required_skill_name="Archery" required_skill_level="40"/>
-	<requirement perk_level="4" required_skill_name="Archery" required_skill_level="60"/>
-	<requirement perk_level="5" required_skill_name="Archery" required_skill_level="80"/>
-	<effect name="EntityDamage">
-		<multiply perk_level="0" value="1"/>
-		<multiply skill_level="1" value="1.1125"/>
-		<multiply skill_level="2" value="1.225"/>
-		<multiply skill_level="3" value="1.3375"/>
-		<multiply skill_level="4" value="1.45"/>
-		<multiply skill_level="5" value="1.5625"/>
-	</effect>
-	</perk>	
+		<requirement perk_level="1" required_skill_name="Archery" required_skill_level="1"/>
+		<requirement perk_level="2" required_skill_name="Archery" required_skill_level="20"/>
+		<requirement perk_level="3" required_skill_name="Archery" required_skill_level="40"/>
+		<requirement perk_level="4" required_skill_name="Archery" required_skill_level="60"/>
+		<requirement perk_level="5" required_skill_name="Archery" required_skill_level="80"/>
+		<effect name="EntityDamage">
+			<multiply perk_level="0" value="1"/>
+			<multiply skill_level="1" value="1.1125"/>
+			<multiply skill_level="2" value="1.225"/>
+			<multiply skill_level="3" value="1.3375"/>
+			<multiply skill_level="4" value="1.45"/>
+			<multiply skill_level="5" value="1.5625"/>
+		</effect>
+	</perk>
 	<player_skill name="Medicine" icon="medical" description_key="medicineDesc" title_key="medicine" group="health">
 		<effect name="HealthGain">
 			<multiply skill_level="1,10" value="1.00,1.32"/>
@@ -458,6 +458,20 @@
 			<multiply skill_level="49,70" value=".668,.44" />
 			<multiply skill_level="70,100" value=".44,.167" /> <!-- =10 points at QL 600 -->
 		</effect>
+<!---	Prep for weapon smithing gating
+		<recipe name="boneShiv" unlock_level="1"/>
+		<recipe name="clubWood" unlock_level="1"/>
+		<recipe name="clubBarbed" unlock_level="?"/>
+		<recipe name="clubIron" unlock_level="?"/>
+		<recipe name="clubSpiked" unlock_level="?"/>
+		<recipe name="ironSledge" unlock_level="?"/>
+		<recipe name="steelSledge" unlock_level="?"/>
+		<recipe name="huntingKnife" unlock_level="?"/>
+		<recipe name="machete" unlock_level="?"/>
+		<recipe name="longSword" unlock_level="?"/>
+		<recipe name="shortSword" unlock_level="?"/>
+		<recipe name="katana" unlock_level="?"/>
+-->
 	</crafting_skill>
 	<crafting_skill name="Tool Smithing" icon="tool_smithing" description_key="toolSmithingDesc" title_key="toolSmithing" group="tools">
 		<effect name="CraftingTime">
@@ -709,26 +723,6 @@
 			<multiply skill_level="49,70" value=".668,.44" />
 			<multiply skill_level="70,100" value=".44,.167" />
 		</effect>
-				<recipe name="plantFiberShoes" unlock_level="1"/>
-		<recipe name="plantFiberGloves" unlock_level="5"/>
-		<recipe name="plantFiberHat" unlock_level="10"/>
-		<recipe name="plantFiberHood" unlock_level="10"/>
-		<recipe name="plantFiberPants" unlock_level="15"/>
-		<recipe name="plantFiberShirt" unlock_level="20"/>
-		<recipe name="cloth" unlock_level="20"/>
-		<recipe name="clothBoots" unlock_level="25"/>
-		<recipe name="clothGloves" unlock_level="30"/>
-		<recipe name="clothHat" unlock_level="35"/>
-		<recipe name="clothPants" unlock_level="40"/>
-		<recipe name="clothJacket" unlock_level="45"/>
-<!---	Prep for future addition of padded armor
-		<recipe name="clothPadded" unlock_level=45"/>
-		<recipe name="clothPaddedBoots" unlock_level="50"/>
-		<recipe name="clothPaddedGloves" unlock_level="55"/>
-		<recipe name="clothPaddedHat" unlock_level="60"/>
-		<recipe name="clothPaddedPants	" unlock_level="65"/>
-		<recipe name="clothPaddedJacket" unlock_level="70"/>
--->
 	</crafting_skill>
 	<crafting_skill name="Leatherworking" icon="armor_leather" description_key="leatherworkingDesc" title_key="leatherworking" group="clothing">
 		<effect name="CraftingTime">
@@ -782,33 +776,13 @@
 			<multiply skill_level="49,70" value=".668,.44" />
 			<multiply skill_level="70,100" value=".44,.167" />
 		</effect>
-		<recipe name="animalHideBoots" unlock_level="1"/>
-		<recipe name="animalHideGloves" unlock_level="5"/>
-		<recipe name="animalHideHood" unlock_level="10"/>
-		<recipe name="animalHideLegArmor" unlock_level="15"/>
-		<recipe name="animalHideChestArmor" unlock_level="20"/>
-		<recipe name="animalHidePoncho" unlock_level="20"/>
-		<recipe name="leather" unlock_level="20"/>
-		<recipe name="leatherBoots" unlock_level="25"/>
-		<recipe name="leatherGloves" unlock_level="30"/>
-		<recipe name="leatherHood" unlock_level="35"/>
-		<recipe name="leatherJacket" unlock_level="40"/>
-		<recipe name="leatherPants" unlock_level="45"/>
-<!---	Prep for future addition of studded armor
-		<recipe name="leatherStudded" unlock_level=45"/>
-		<recipe name="leatherStuddedBoots" unlock_level="50"/>
-		<recipe name="leatherStuddedGloves" unlock_level="55"/>
-		<recipe name="leatherStuddedHood" unlock_level="60"/>
-		<recipe name="leatherStuddedPants	" unlock_level="65"/>
-		<recipe name="leatherStuddedJacket" unlock_level="70"/>
--->
 	</crafting_skill>
-<!---	Removed with Leatherworking recipe gating
+
 	<perk name="Leather Tanning" icon="armor_leather" description_key="leatherTanningPerkDesc" title_key="leatherTanningPerk" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="clothing">
 		<requirement skill_level="1" required_skill_name="Leatherworking" required_skill_level="1"/>
 		<recipe name="leather" unlock_level="1"/>
 	</perk>
--->
+
 	<crafting_skill name="Armor Smithing" icon="forge" description_key="armorerDesc" title_key="armorer" group="clothing">
 		<effect name="CraftingTime">
 			<multiply skill_level="1,5" value="1,.931" />
@@ -861,16 +835,30 @@
 			<multiply skill_level="49,70" value=".668,.44" />
 			<multiply skill_level="70,100" value=".44,.167" />
 		</effect>
-		<recipe name="scrapBoots" unlock_level="1"/>
-		<recipe name="scrapGloves" unlock_level="5"/>
-		<recipe name="scrapHelmet" unlock_level="10"/>
-		<recipe name="scrapLegArmor" unlock_level="15"/>
-		<recipe name="scrapChestArmor" unlock_level="20"/>
-		<recipe name="ironBoots" unlock_level="25"/>
-		<recipe name="ironGloves" unlock_level="30"/>
-		<recipe name="ironHelmet" unlock_level="35"/>
-		<recipe name="ironLegArmor" unlock_level="40"/>
-		<recipe name="ironChestArmor" unlock_level="45"/>
+<!--- Given at Level 1
+		<recipe name="plantFiberShoes" unlock_level="1"/>
+		<recipe name="plantFiberGloves" unlock_level="5"/>
+		<recipe name="plantFiberHat" unlock_level="10"/>
+		<recipe name="plantFiberHood" unlock_level="10"/>
+		<recipe name="plantFiberPants" unlock_level="15"/>
+		<recipe name="plantFiberShirt" unlock_level="20"/>
+-->
+<!---	Prep for future addition of padded armor
+		<recipe name="clothPadded" unlock_level=45"/>
+		<recipe name="clothPaddedBoots" unlock_level="50"/>
+		<recipe name="clothPaddedGloves" unlock_level="55"/>
+		<recipe name="clothPaddedHat" unlock_level="60"/>
+		<recipe name="clothPaddedPants	" unlock_level="65"/>
+		<recipe name="clothPaddedJacket" unlock_level="70"/>
+-->
+<!---	Prep for future addition of studded armor
+		<recipe name="leatherStudded" unlock_level=45"/>
+		<recipe name="leatherStuddedBoots" unlock_level="50"/>
+		<recipe name="leatherStuddedGloves" unlock_level="55"/>
+		<recipe name="leatherStuddedHood" unlock_level="60"/>
+		<recipe name="leatherStuddedPants	" unlock_level="65"/>
+		<recipe name="leatherStuddedJacket" unlock_level="70"/>
+-->
 <!---		Future Recipes to be added later
 		<recipe name="steelBoots" unlock_level="50"/>
 		<recipe name="steelGloves" unlock_level="55"/>
@@ -879,6 +867,42 @@
 		<recipe name="steelChestArmor" unlock_level="70"/>
 -->
 	</crafting_skill>
+	<perk name="Master Armorer" icon="forge" description_key="Gives the ability to craft increasingly better armors.  Level 1 = Cloth, Level 2 = Animal Hide, Level 3 = Leather, Level 4 = Scrap Armor, Level 5 = Iron Armor." title_key="Master Armorer" max_level="5" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" passive_effect="true" group="clothing">
+		<requirement perk_level="1" required_skill_name="Armor Smithing" required_skill_level="10"/>
+		<requirement perk_level="2" required_skill_name="Armor Smithing" required_skill_level="20"/>
+		<requirement perk_level="3" required_skill_name="Armor Smithing" required_skill_level="30"/>
+		<requirement perk_level="4" required_skill_name="Armor Smithing" required_skill_level="40"/>
+		<requirement perk_level="5" required_skill_name="Armor Smithing" required_skill_level="50"/>
+		<recipe name="Cloth Armor Patch" unlock_level="1"/>
+		<recipe name="clothBoots" unlock_level="1"/>
+		<recipe name="clothGloves" unlock_level="1"/>
+		<recipe name="clothHat" unlock_level="1"/>
+		<recipe name="clothPants" unlock_level="1"/>
+		<recipe name="clothJacket" unlock_level="1"/>
+		<recipe name="Animal Hide Armor Patch" unlock_level="2"/>
+		<recipe name="animalHideBoots" unlock_level="2"/>
+		<recipe name="animalHideGloves" unlock_level="2"/>
+		<recipe name="animalHideHood" unlock_level="2"/>
+		<recipe name="animalHideLegArmor" unlock_level="2"/>
+		<recipe name="animalHideChestArmor" unlock_level="2"/>
+		<recipe name="animalHidePoncho" unlock_level="2"/>
+		<recipe name="leatherBoots" unlock_level="3"/>
+		<recipe name="leatherGloves" unlock_level="3"/>
+		<recipe name="leatherHood" unlock_level="3"/>
+		<recipe name="leatherJacket" unlock_level="3"/>
+		<recipe name="leatherPants" unlock_level="3"/>
+		<recipe name="scrapBoots" unlock_level="4"/>
+		<recipe name="scrapGloves" unlock_level="4"/>
+		<recipe name="scrapHelmet" unlock_level="4"/>
+		<recipe name="scrapLegArmor" unlock_level="4"/>
+		<recipe name="scrapChestArmor" unlock_level="4"/>
+		<recipe name="ironBoots" unlock_level="5"/>
+		<recipe name="ironGloves" unlock_level="5"/>
+		<recipe name="ironHelmet" unlock_level="5"/>
+		<recipe name="ironLegArmor" unlock_level="5"/>
+		<recipe name="ironChestArmor" unlock_level="5"/>
+	</perk>
+
 	<crafting_skill name="Miscellaneous Crafting" exp_to_level="300" icon="misc_crafting" description_key="miscCraftingDesc" title_key="miscCrafting" group="crafting">
 		<effect name="CraftingTime">
 			<multiply skill_level="1,5" value="1,.931" />
@@ -932,6 +956,7 @@
 			<multiply skill_level="70,100" value=".44,.167" />
 		</effect>
 	</crafting_skill>
+
 	<crafting_skill name="Cooking" exp_to_level="130" icon="knife" description_key="The higher your skill in cooking the faster you can craft meals." title_key="Cooking" group="crafting">
 		<effect name="CraftingTime">
 			<multiply skill_level="1,5" value="1,.931" />
@@ -956,314 +981,7 @@
 		<recipe name="baconAndEggs" unlock_level="30"/>
 		<recipe name="meatStew" unlock_level="35"/>
 	</crafting_skill>
-	<crafting_skill name="Blacksmith" exp_to_level="130" icon="knife" description_key="The ability to forge and craft metal and everyday metal items." title_key="blacksmith" group="crafting">
-		<effect name="CraftingTime">
-			<multiply skill_level="1,5" value="1,.931" />
-			<multiply skill_level="5,11" value=".931,.871" />
-			<multiply skill_level="11,19" value=".871,.813" />
-			<multiply skill_level="19,32" value=".813,.741" />
-			<multiply skill_level="32,49" value=".741,.667" />
-			<multiply skill_level="49,70" value=".667,.591" />
-			<multiply skill_level="70,100" value=".591,.5" />
-		</effect>
-		<effect name="CraftingQuality">
-			<setvalue skill_level="1,5" value="1,69" />
-			<setvalue skill_level="5,11" value="69,129" />
-			<setvalue skill_level="11,19" value="129,187" />
-			<setvalue skill_level="19,32" value="187,259" />
-			<setvalue skill_level="32,49" value="259,334" />
-			<setvalue skill_level="49,70" value="334,409" />
-			<setvalue skill_level="70,100" value="409,500" />
-		</effect>
-		<effect name="RepairTime">
-			<multiply skill_level="1,10" value="1.00,0.70"/>
-			<multiply skill_level="10,20" value="0.70,0.61"/>
-			<multiply skill_level="20,30" value="0.61,0.54"/>
-			<multiply skill_level="30,40" value="0.54,0.48"/>
-			<multiply skill_level="40,50" value="0.48,0.43"/>
-			<multiply skill_level="50,60" value="0.43,0.39"/>
-			<multiply skill_level="60,70" value="0.39,0.35"/>
-			<multiply skill_level="70,80" value="0.35,0.31"/>
-			<multiply skill_level="80,90" value="0.31,0.28"/>
-			<multiply skill_level="90,100" value="0.28,0.25"/>
-		</effect>
-		<effect name="RepairAmount">
-			<add skill_level="1,10" value="1,21"/>
-			<add skill_level="10,20" value="21,27"/>
-			<add skill_level="20,30" value="27,31"/>
-			<add skill_level="30,40" value="31,35"/>
-			<add skill_level="40,50" value="35,38"/>
-			<add skill_level="50,60" value="38,41"/>
-			<add skill_level="60,70" value="41,43"/>
-			<add skill_level="70,80" value="43,46"/>
-			<add skill_level="80,90" value="46,48"/>
-			<add skill_level="90,100" value="48,50"/>
-		</effect>
-		<effect name="RepairQualityLoss">
-			<multiply skill_level="1,5" value="1.67,1.464" />
-			<multiply skill_level="5,11" value="1.464,1.283" />
-			<multiply skill_level="11,19" value="1.283,1.109" />
-			<multiply skill_level="19,32" value="1.109,.892" />
-			<multiply skill_level="32,49" value=".892,.668" />
-			<multiply skill_level="49,70" value=".668,.44" />
-			<multiply skill_level="70,100" value=".44,.167" />
-		</effect>
-		<recipe name="candyTin" unlock_level="1"/>
-		<recipe name="hubcap" unlock_level="1"/>
-		<recipe name="airFilter" unlock_level="1"/>
-		<recipe name="forge" unlock_level="1"/>
-		<recipe name="ladderMetal" unlock_level="5"/>
-		<recipe name="shortMetalPipe (Both Recipes)" unlock_level="5"/>
-		<recipe name="wroughtIronFenceSheet" unlock_level="10"/>
-		<recipe name="nail" unlock_level="10"/>
-		<recipe name="forge" unlock_level="25"/>
-		<recipe name="forgedIron" unlock_level="25"/>
-		<recipe name="ironArrowHead" unlock_level="25"/>
-<!---	Future tool head additions
-		<recipe name="ironAxeHead" unlock_level="25"/>
-		<recipe name="ironHammerHead" unlock_level="25"/>
-		<recipe name="ironHoeHead" unlock_level="25"/>
-		<recipe name="ironPickHead" unlock_level="25"/>
-		<recipe name="ironShovelHead" unlock_level="25"/>
-		<recipe name="ironSledgeHead" unlock_level="25"/>
--->
-		<recipe name="metalTrussingBlock" unlock_level="25"/>
-		<recipe name="metalTrussingRamp" unlock_level="25"/>
-		<recipe name="rScrapIronPlate" unlock_level="25"/>
-		<recipe name="scrapIronSheet" unlock_level="25"/>
-		<recipe name="scrapIronGrateSheet" unlock_level="25"/>
-		<recipe name="scrapIronFrameBlock" unlock_level="25"/>
-		<recipe name="scrapIronFrameCNRFull" unlock_level="25"/>
-		<recipe name="scrapIronFrameCNRInside" unlock_level="25"/>
-		<recipe name="scrapIronFrameRamp" unlock_level="25"/>
-		<recipe name="scrapIronFrameWedge" unlock_level="25"/>
-		<recipe name="scrapIronFrameWedgeTip" unlock_level="25"/>
-		<recipe name="scrapIronStairs25" unlock_level="25"/>
-		<recipe name="scrapIronArrowSlitHalf" unlock_level="30"/>
-		<recipe name="scrapHatch_v1" unlock_level="30"/>
-		<recipe name="ironBars" unlock_level="30"/>
-		<recipe name="ironDoor1_v1" unlock_level="30"/>
-		<recipe name="keystoneBlock" unlock_level="30"/>
-		<recipe name="rocketCasing" unlock_level="40"/>
-		<recipe name="rebarFrameBlock" unlock_level="50"/>
-		<recipe name="rebarFrameCNRInside" unlock_level="50"/>
-		<recipe name="rebarFramePillar100" unlock_level="50"/>
-		<recipe name="rebarFrameRamp" unlock_level="50"/>
-		<recipe name="steelArrowHead" unlock_level="50"/>
-<!---	Future tool head additions
-		<recipe name="+steelAxeHead" unlock_level="50"/>
-		<recipe name="+steelPickHead" unlock_level="50"/>
-		<recipe name="+steelShovelHead" unlock_level="50"/>
-		<recipe name="+steelSledgeHead" unlock_level="50"/>
--->
-		<recipe name="forgedSteel" unlock_level="50"/>
-		<recipe name="minibikeChassis" unlock_level="50"/>
-	</crafting_skill>
-	<crafting_skill name="Carpentry" exp_to_level="130" icon="mining" description_key="Because you're good at dealing with morning wood." title_key="cartpentry" group="crafting">
-		<effect name="CraftingTime">
-			<multiply skill_level="1,5" value="1,.931" />
-			<multiply skill_level="5,11" value=".931,.871" />
-			<multiply skill_level="11,19" value=".871,.813" />
-			<multiply skill_level="19,32" value=".813,.741" />
-			<multiply skill_level="32,49" value=".741,.667" />
-			<multiply skill_level="49,70" value=".667,.591" />
-			<multiply skill_level="70,100" value=".591,.5" />
-		</effect>
-		<effect name="CraftingQuality">
-			<setvalue skill_level="1,5" value="1,69" />
-			<setvalue skill_level="5,11" value="69,129" />
-			<setvalue skill_level="11,19" value="129,187" />
-			<setvalue skill_level="19,32" value="187,259" />
-			<setvalue skill_level="32,49" value="259,334" />
-			<setvalue skill_level="49,70" value="334,409" />
-			<setvalue skill_level="70,100" value="409,500" />
-		</effect>
-		<effect name="RepairTime">
-			<multiply skill_level="1,10" value="1.00,0.70"/>
-			<multiply skill_level="10,20" value="0.70,0.61"/>
-			<multiply skill_level="20,30" value="0.61,0.54"/>
-			<multiply skill_level="30,40" value="0.54,0.48"/>
-			<multiply skill_level="40,50" value="0.48,0.43"/>
-			<multiply skill_level="50,60" value="0.43,0.39"/>
-			<multiply skill_level="60,70" value="0.39,0.35"/>
-			<multiply skill_level="70,80" value="0.35,0.31"/>
-			<multiply skill_level="80,90" value="0.31,0.28"/>
-			<multiply skill_level="90,100" value="0.28,0.25"/>
-		</effect>
-		<effect name="RepairAmount">
-			<add skill_level="1,10" value="1,21"/>
-			<add skill_level="10,20" value="21,27"/>
-			<add skill_level="20,30" value="27,31"/>
-			<add skill_level="30,40" value="31,35"/>
-			<add skill_level="40,50" value="35,38"/>
-			<add skill_level="50,60" value="38,41"/>
-			<add skill_level="60,70" value="41,43"/>
-			<add skill_level="70,80" value="43,46"/>
-			<add skill_level="80,90" value="46,48"/>
-			<add skill_level="90,100" value="48,50"/>
-		</effect>
-		<effect name="RepairQualityLoss">
-			<multiply skill_level="1,5" value="1.67,1.464" />
-			<multiply skill_level="5,11" value="1.464,1.283" />
-			<multiply skill_level="11,19" value="1.283,1.109" />
-			<multiply skill_level="19,32" value="1.109,.892" />
-			<multiply skill_level="32,49" value=".892,.668" />
-			<multiply skill_level="49,70" value=".668,.44" />
-			<multiply skill_level="70,100" value=".44,.167" />
-		</effect>
-		<recipe name="railingOldWoodSheet" unlock_level="1"/>
-		<recipe name="woodRailing" unlock_level="1"/>
-		<recipe name="woodFenceSheet" unlock_level="1"/>
-		<recipe name="woodPillar100" unlock_level="1"/>
-		<recipe name="whitePicketFenceSheet" unlock_level="1"/>
-		<recipe name="woodFenceFarmSheet" unlock_level="1"/>
-		<recipe name="logCabinBlock" unlock_level="1"/>
-		<recipe name="woodLogPillar100" unlock_level="1"/>
-		<recipe name="woodPole" unlock_level="5"/>
-		<recipe name="ladderWood" unlock_level="5"/>
-		<recipe name="woodFrameBlock" unlock_level="10"/>
-		<recipe name="woodFrameCNRFull" unlock_level="10"/>
-		<recipe name="woodFrameCNRInside" unlock_level="10"/>
-		<recipe name="woodFrameRamp" unlock_level="10"/>
-		<recipe name="woodFrameWedge" unlock_level="10"/>
-		<recipe name="woodShinglesBlock" unlock_level="10"/>
-		<recipe name="woodShinglesCNRFull" unlock_level="10"/>
-		<recipe name="woodShinglesGable" unlock_level="10"/>
-		<recipe name="woodShinglesPyramid" unlock_level="10"/>
-		<recipe name="woodShinglesRamp" unlock_level="10"/>
-		<recipe name="woodStairs25" unlock_level="10"/>
-		<recipe name="woodSupport" unlock_level="10"/>
-		<recipe name="woodStairsBoard" unlock_level="10"/>
-		<recipe name="woodStairsBoardRailing" unlock_level="10"/>
-		<recipe name="cntStorageChest" unlock_level="15"/>
-		<recipe name="cntSecureStorageChest" unlock_level="15"/>
-		<recipe name="secureDoorWooden" unlock_level="15"/>
-		<recipe name="barnWoodBlock" unlock_level="20"/>
-		<recipe name="woodWedgeTip" unlock_level="20"/>
-		<recipe name="woodHalf" unlock_level="20"/>
-		<recipe name="woodHatch1_v1" unlock_level="25"/>
-		<recipe name="woodArrowSlitHalf" unlock_level="25"/>
-		
-<!---	Placeholder for tool shafts
-		<recipe name="longWoodShaft" unlock_level="25"/>
-		<recipe name="hortWoodShaft" unlock_level="25"/>
--->
-		<recipe name="woodCatwalk" unlock_level="30"/>
-		<recipe name="woodCatwalkRailing" unlock_level="30"/>
-		<recipe name="woodCatwalkRailingCNR" unlock_level="30"/>
-		<recipe name="woodCatwalkWedgeRailing" unlock_level="30"/>
-		<recipe name="cntStorageAmmo" unlock_level="35"/>
-		<recipe name="cntStorageBuilding" unlock_level="35"/>
-		<recipe name="cntStorageExplosives" unlock_level="35"/>
-		<recipe name="cntStorageFood" unlock_level="35"/>
-		<recipe name="cntStorageHealth" unlock_level="35"/>
-		<recipe name="cntStorageWeapons" unlock_level="35"/>
-		<recipe name="redWoodBlock" unlock_level="40"/>
-		<recipe name="redWoodPillar100" unlock_level="40"/>
-		<recipe name="redWoodStairs25" unlock_level="40"/>
-		<recipe name="cobblestoneFrameBlock" unlock_level="45"/>
-		<recipe name="cobblestoneFrameRamp" unlock_level="45"/>
-		<recipe name="cobblestoneFrameWedge" unlock_level="45"/>
-		<recipe name="cobblestoneFrameWedgeTip" unlock_level="45"/>
-		<recipe name="cobblestoneFramePlate" unlock_level="45"/>
-		<recipe name="cobblestoneFrameCNRFull" unlock_level="45"/>
-		<recipe name="cobblestoneFrameCNRInside" unlock_level="45"/>
-		<recipe name="cobblestoneFramePillar100" unlock_level="45"/>
-		<recipe name="cobblestoneFramePillar50" unlock_level="45"/>
-		<recipe name="cobblestoneFramePole" unlock_level="45"/>
-		<recipe name="cobblestoneFrameStairs25" unlock_level="45"/>
-	</crafting_skill>
-	<crafting_skill name="Bowyer/Fletcher" exp_to_level="130" icon="knife" description_key="Ability to make bows, crossbows, and ammunition" title_key="bowyerFletcher" group="crafting">
-		<effect name="CraftingTime">
-			<multiply skill_level="1,5" value="1,.931" />
-			<multiply skill_level="5,11" value=".931,.871" />
-			<multiply skill_level="11,19" value=".871,.813" />
-			<multiply skill_level="19,32" value=".813,.741" />
-			<multiply skill_level="32,49" value=".741,.667" />
-			<multiply skill_level="49,70" value=".667,.591" />
-			<multiply skill_level="70,100" value=".591,.5" />
-		</effect>
-		<effect name="CraftingQuality">
-			<setvalue skill_level="1,5" value="1,69" />
-			<setvalue skill_level="5,11" value="69,129" />
-			<setvalue skill_level="11,19" value="129,187" />
-			<setvalue skill_level="19,32" value="187,259" />
-			<setvalue skill_level="32,49" value="259,334" />
-			<setvalue skill_level="49,70" value="334,409" />
-			<setvalue skill_level="70,100" value="409,500" />
-		</effect>
-		<effect name="RepairTime">
-			<multiply skill_level="1,10" value="1.00,0.70"/>
-			<multiply skill_level="10,20" value="0.70,0.61"/>
-			<multiply skill_level="20,30" value="0.61,0.54"/>
-			<multiply skill_level="30,40" value="0.54,0.48"/>
-			<multiply skill_level="40,50" value="0.48,0.43"/>
-			<multiply skill_level="50,60" value="0.43,0.39"/>
-			<multiply skill_level="60,70" value="0.39,0.35"/>
-			<multiply skill_level="70,80" value="0.35,0.31"/>
-			<multiply skill_level="80,90" value="0.31,0.28"/>
-			<multiply skill_level="90,100" value="0.28,0.25"/>
-		</effect>
-		<effect name="RepairAmount">
-			<add skill_level="1,10" value="1,21"/>
-			<add skill_level="10,20" value="21,27"/>
-			<add skill_level="20,30" value="27,31"/>
-			<add skill_level="30,40" value="31,35"/>
-			<add skill_level="40,50" value="35,38"/>
-			<add skill_level="50,60" value="38,41"/>
-			<add skill_level="60,70" value="41,43"/>
-			<add skill_level="70,80" value="43,46"/>
-			<add skill_level="80,90" value="46,48"/>
-			<add skill_level="90,100" value="48,50"/>
-		</effect>
-		<effect name="RepairQualityLoss">
-			<multiply skill_level="1,5" value="1.67,1.464" />
-			<multiply skill_level="5,11" value="1.464,1.283" />
-			<multiply skill_level="11,19" value="1.283,1.109" />
-			<multiply skill_level="19,32" value="1.109,.892" />
-			<multiply skill_level="32,49" value=".892,.668" />
-			<multiply skill_level="49,70" value=".668,.44" />
-			<multiply skill_level="70,100" value=".44,.167" />
-		</effect>
-		<recipe name="arrow" unlock_level="1"/>
-		<recipe name="woodenBow" unlock_level="1"/>
-		<recipe name="ironArrow" unlock_level="20"/>
-		<recipe name="steelArrow" unlock_level="30"/>
-		<recipe name="crossbow" unlock_level="40"/>
-		<recipe name="ironCrossbowBolt" unlock_level="40"/>
-		<recipe name="steelCrossbowBolt" unlock_level="50"/>
-	</crafting_skill>
-<!--	Prep work for adding Chemistry	
-	<crafting_skill name="Chemistry" exp_to_level="130" icon="knife" description_key="Allows crafting of chimicals, medicines, etc." title_key="chemistry" group="crafting">
-		<effect name="CraftingTime">
-			<multiply skill_level="1,5" value="1,.931" />
-			<multiply skill_level="5,11" value=".931,.871" />
-			<multiply skill_level="11,19" value=".871,.813" />
-			<multiply skill_level="19,32" value=".813,.741" />
-			<multiply skill_level="32,49" value=".741,.667" />
-			<multiply skill_level="49,70" value=".667,.591" />
-			<multiply skill_level="70,100" value=".591,.5" />
-		</effect>
-		<recipe name="chemistryStation" unlock_level="5"/>
-		<recipe name="aloeCream" unlock_level="7"/>
-		<recipe name="antibiotics" unlock_level="7"/>
-		<recipe name="bioFuel" unlock_level="10"/>
-		<recipe name="beer" unlock_level="10"/>
-		<recipe name="ductTape" unlock_level="15"/>
-		<recipe name="dynamite" unlock_level="10"/>
-		<recipe name="fertilizer" unlock_level="10"/>
-		<recipe name="firstAidBandage" unlock_level="20"/>
-		<recipe name="firstAidKit" unlock_level="10"/>
-		<recipe name="gasCan" unlock_level="25"/>
-		<recipe name="glue" unlock_level="30"/>
-		<recipe name="grainAlcohol" unlock_level="35"/>
-		<recipe name="herbalAntibiotics" unlock_level="10"/>
-		<recipe name="moldyBread" unlock_level="25"/>
-		<recipe name="oilBarrel" unlock_level="30"/>
-		<recipe name="snowberryExtract" unlock_level="35"/>
-		<recipe name="snowberryJuice" unlock_level="35"/>
-	</crafting_skill>
--->
+
 	<perk name="The Survivor" icon="run" description_key="theSurvivorDesc" title_key="theSurvivor" max_level="5" skill_point_cost_multiplier="0" passive_effect="true" skill_point_cost_per_level="10" group="health">
 		<requirement perk_level="1" required_player_level="1" />
 		<requirement perk_level="2" required_player_level="10" />
